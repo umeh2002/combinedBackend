@@ -23,10 +23,9 @@ const authModel = new mongoose.Schema({
         type:String,
         required:true
     },
-    confirmPassword:{
-        type:String,
-        required:true
-    }
+    // confirmPassword:{
+    //     type:String,
+    // }
 })
 
 export default mongoose.model<iAuthData>("auths" , authModel)
