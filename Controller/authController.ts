@@ -28,12 +28,12 @@ export const createUser =async (req:any, res: Response) => {
         // comfirmPassword:hashed
       });
 
-      console.log(user)
+    //   console.log(user)
 
-    //   res.status(201).json({
-    //     message : "User Successfully Created",
-    //     data: user,
-    //   });
+      res.status(201).json({
+        message : "User Successfully Created",
+        data: user,
+      });
 } catch (error: any) {
     res.status(404).json({
         message : "Error creating user",
