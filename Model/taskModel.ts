@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import { iTaskData } from "../Utils/interface";
 
 
-const TaskModel = new mongoose.Schema({
+const taskModel = new mongoose.Schema({
     name:{
         type:String
     },
@@ -17,4 +17,4 @@ const TaskModel = new mongoose.Schema({
     }
 })
 
-export default mongoose.model<iTaskData>("tasks" ,TaskModel)
+export default mongoose.model<iTaskData>("tasks" ,taskModel)
