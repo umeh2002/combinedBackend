@@ -1,6 +1,6 @@
 import express, { Application } from "express"
-import db from "./Config/db"
-import main from "./main"
+import db from "../Config/db"
+import main from "../main"
 import env from "dotenv"
 env.config()
 

@@ -18,7 +18,7 @@ export const createTask = async (req: Request, res: Response) => {
       message: "Task created successfully",
       data: create,
     });
-  } catch (error) {
+  } catch (error:any) {
     return res.status(404).json({
       message: "can't create task",
       data: error.message,
@@ -34,7 +34,7 @@ export const viewTask = async (req: Request, res: Response) => {
       message: "can see all task",
       data: view,
     });
-  } catch (error) {
+  } catch (error:any) {
     return res.status(404).json({
       message: "can't see all task",
       data: error.message,
@@ -51,7 +51,7 @@ export const viewOneTask = async (req: Request, res: Response) => {
       message: "can see one task",
       data: one,
     });
-  } catch (error) {
+  } catch (error:any) {
     return res.status(404).json({
       message: "can't see all task",
       data: error.message,
@@ -73,7 +73,7 @@ export const updateTask = async (req: Request, res: Response) => {
       message: "Task updated successfully",
       data: tasked,
     });
-  } catch (error) {
+  } catch (error:any) {
     return res.status(404).json({
       message: "can't update task",
       data: error.message,
@@ -89,7 +89,7 @@ export const deleteTask = async (req: Request, res: Response) => {
       message: "task deleted successfully",
       data: tasked,
     });
-  } catch (error) {
+  } catch (error:any) {
     return res.status(404).json({
       message: "can't delete task",
       data: error.message,
